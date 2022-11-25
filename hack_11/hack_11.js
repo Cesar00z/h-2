@@ -16,9 +16,50 @@
  * output => ["h@ck","one",2,"three",4,"five","h@ck","f00","Bar","b@z","quX","3ch0","h@ck"]   
  */
 let numberArray = [1,2,3,4,5];
-let stringArray = ["foo","bar","baz","qux","echo"]
+let stringArray = ["foo","bar","baz","qux","echo"];
 let result = [];
 
+let arr = [...numberArray, ...stringArray];
+
+arr.forEach( item => {
+  switch( item ) {
+    case "foo":
+      item = "f00";
+      break;
+
+    case "bar":
+      item = "Bar";
+      break;
+    
+    case "baz":
+      item = "b@z";
+      break;
+    
+    case "qux":
+      item = "quX";
+      break;
+    
+    case "echo":
+      item = "3ch0";
+      break;
+    
+    case 1:
+      item = "one";
+      break;
+  
+    case 3:
+      item = "three";
+      break;
+
+    case 5:
+      item = "five";
+  }
+  result.push(item);
+})
+
+result.unshift("h@ack");
+result.push("h@ck");
+result.splice(6, 0, "h@ck");
 
 //export result
 module.exports = result;
