@@ -15,6 +15,9 @@
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 
+arr.forEach( ( item, index ) => {
+   if ( index % 2 == 1 ) result.push(item)
+})
 
 //export result
 module.exports = result;

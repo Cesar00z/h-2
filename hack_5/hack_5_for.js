@@ -6,7 +6,11 @@
  * output => [7,5,3,1]
  */
 let result = [];
+let i = 7;
 
-
+for (; i >= 1; i--) {
+  if ( i % 2 == 1) result.push(i);
+}
+result
 //export result
 module.exports = result;

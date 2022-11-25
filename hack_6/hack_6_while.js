@@ -8,7 +8,14 @@
  */
 let str = "fooziman";
 let result = [];
+let i = 0;
+let limite = str.length;
 
+while ( i < limite ) {
+  let letras = str[i];
+  result.push(letras);
+  i++;
+}
 
 //export result
 module.exports = result;
