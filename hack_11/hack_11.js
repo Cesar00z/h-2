@@ -21,43 +21,36 @@ let result = [];
 
 let arr = [...numberArray, ...stringArray];
 
-arr.forEach( item => {
-  switch( item ) {
-    case "foo":
-      item = "f00";
-      break;
-
-    case "bar":
-      item = "Bar";
-      break;
-    
-    case "baz":
-      item = "b@z";
-      break;
-    
-    case "qux":
-      item = "quX";
-      break;
-    
-    case "echo":
-      item = "3ch0";
-      break;
-    
+for ( let item of arr ) {
+  switch ( item ) {
     case 1:
       item = "one";
       break;
-  
     case 3:
       item = "three";
       break;
-
     case 5:
       item = "five";
+      break;
+    case "foo":
+      item = "f00";
+      break;
+    case "bar":
+      item = "Bar";
+      break;
+    case "baz":
+      item = "b@z";
+      break;
+    case "qux":
+      item = "quX";
+      break;
+    case "echo":
+      item = "3ch0";
+      break;
   }
-  result.push(item);
-})
-
-result.unshift("h@ack");
+  result.push(item)
+}
+result.unshift("h@ck");
 result.push("h@ck");
 result.splice(6, 0, "h@ck");
 

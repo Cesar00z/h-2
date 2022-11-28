@@ -14,7 +14,5 @@ while ( i >= 1 ) {
   i--;
 }
 
-console.log(result)
-
 //export result
 module.exports = result;
