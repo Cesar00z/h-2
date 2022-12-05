@@ -10,10 +10,10 @@ let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
 arr.forEach( item => {
-  let primeraLetraMinuscula = item[0];
-  let primeraletraMayuscula = item[0].toUpperCase();
-  let palabras = item.replace(primeraLetraMinuscula, primeraletraMayuscula);
-  result.push(palabras);
+  let lowerStr = item[0];
+  let upperStr = item[0].toUpperCase();
+  let str = item.replace(lowerStr, upperStr);
+  result.push(str);
 })
 
 //export result
