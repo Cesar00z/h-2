@@ -9,7 +9,7 @@ let result = [];
 let i = 0;
 
 let numeros = []
-for (i; i <= 7; i++) {
+for (; i <= 7; i++ ) {
   if ( i % 2 == 1) numeros.push(i);
 };
 
