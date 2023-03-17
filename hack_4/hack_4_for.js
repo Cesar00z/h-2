@@ -6,8 +6,10 @@
  * output => [1,3,5,7]
  */
 let result = [];
+
 let i = 0;
-for (; i <= 7; i++ ) {
+let limite = 7;
+for (; i <= limite; i++ ) {
   if (i % 2 == 1) {
     result.push(i);
   }
