@@ -11,13 +11,20 @@
 let arr = ["foo","bar","baz","qux","echo"];
 let result = [];
 
-let palabras = arr.slice(1, 3);
-let palabraMayuscula = arr[3].toUpperCase();
-let arrFinal = [...palabras, palabraMayuscula];
+// let palabras = arr.slice(1, 3);
+// let palabraMayuscula = arr[3].toUpperCase();
+// let arrFinal = [...palabras, palabraMayuscula];
 
-arrFinal.forEach( item => {
-  let reemplazo = item.replace('a', '@');
-  result.push(reemplazo);
+// arrFinal.forEach( item => {
+//   let reemplazo = item.replace('a', '@');
+//   result.push(reemplazo);
+// })
+
+result = arr.splice(1, 3)
+result = result.map(item => {
+  if (item.startsWith('b') || item.startsWith('q')) {
+    return (item.includes('a') ? item.replace('a', '@') : item.toUpperCase())
+  }
 })
 
 //export result

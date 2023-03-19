@@ -15,9 +15,18 @@
 let arr = ["foo","bar","baz","qux","echo","octo","cat","foobar","quux"];
 let result = [];
 
-arr.forEach( ( item, index ) => {
-   if ( index % 2 == 1 ) result.push(item)
-})
+// arr.forEach( ( item, index ) => {
+//    if ( index % 2 == 1 ) result.push(item)
+// })
+
+let i = 0;
+let limite = arr.length
+for(; i < limite; i++) {
+   if (i % 2 !== 0) {
+      console.log(arr[i])
+      result.push(i);
+   }
+}
 
 //export result
 module.exports = result;
