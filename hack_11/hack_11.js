@@ -77,17 +77,17 @@ result = arr.map(item => {
 
 let i = 0;
 let limite = result.length - 1;
+let mitad = Math.round(limite / 2) + 1;
+
 for (; i <= limite; i++) {
   if (i == 0) {
     result.unshift("h@ck");
-  } else if (i == result.length-1 / 2) {
+  } else if (i == mitad) {
     result.splice(i, 0, "h@ck");
   } else if (i == limite) {
     result.push("h@ck");
   }
 }
-console.log(result)
-// console.log(result.length)
-// console.log(Math.trunc(result.length-1) / 2)
+
 //export result
 module.exports = result;

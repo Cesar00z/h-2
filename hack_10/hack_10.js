@@ -23,8 +23,7 @@ let i = 0;
 let limite = arr.length
 for(; i < limite; i++) {
    if (i % 2 !== 0) {
-      console.log(arr[i])
-      result.push(i);
+      result.push(arr[i]);
    }
 }
 
